@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="c-g">
     <Navi />
     <router-view />
   </div>
@@ -16,5 +16,11 @@ export default {
 </script>
 
 <style>
+
+.c-g {
+  height: 100%;
+  background: #000000;
+}
+
 
 </style>

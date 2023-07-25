@@ -1,7 +1,6 @@
 <template>
   <div class="arena">
-    <p>This is the Home page.</p>
-
+    <div class="home-background" />
   </div>
 </template>
 
@@ -22,7 +21,13 @@ export default {
   background: #000000;
 }
 
-
+.home-background {
+  height: 80vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("@/asset/img/CarlHomeBackground.jpg");
+}
 
 
 </style>

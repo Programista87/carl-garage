@@ -1,27 +1,30 @@
 <template>
+  <div class="top-bar">
+    <img class="logo-img" src="@/asset/icon/logo.jpg" alt="logo" />
+    <span class="name">Carl-Garage</span>
+  </div>
+  <div class="line"></div>
   <ul>
     <li>
-      <router-link to="/"><p>Witaj</p></router-link>
+      <router-link to="/"><p>Start</p></router-link>
     </li>
     <li>
-      <router-link to="/kontakt"><p>Kontakt</p></router-link>
+      <router-link to="/warsztat"><p>Warsztat</p></router-link>
     </li>
     <li>
       <router-link to="/lakiernia"><p>Lakiernia</p></router-link>
     </li>
     <li>
-      <router-link to="/mapa"><p>Mapa</p></router-link>
-    </li>
-    <li>
       <router-link to="/realizacje"><p>Realizacje</p></router-link>
     </li>
     <li>
-      <router-link to="/warsztat"><p>Warsztat</p></router-link>
+      <router-link to="/mapa"><p>Mapa</p></router-link>
+    </li>
+    <li>
+      <router-link to="/kontakt"><p>Kontakt</p></router-link>
     </li>
   </ul>
-  <div class="logo">
-    <img class="logo-img" src="@/asset/icon/logo.jpg" alt="logo" />
-  </div>
+
 </template>
 
 <script>
@@ -32,12 +35,13 @@ export default {};
 
 ul {
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
   list-style-type: none;
   padding: 10px;
-  gap: 30px;
+  gap: 40px;
   overflow: hidden;
   background-color: #000000;
+  margin-left: 90px;
 }
 
 li {
@@ -45,15 +49,18 @@ li {
 }
 
 p {
-  color: gold;
+  color: silver;
+  font-family: "DialogInput",serif;
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
 }
 
-.logo {
+.top-bar {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0;
-  width: 100%;
+  justify-content: flex-start;
+  align-items: end;
+  padding: 0 0 0 50px;
   height: 100%;
   background: #000000;
 }
@@ -62,6 +69,19 @@ p {
   width: 150px;
   height: 150px;
 }
+
+.name {
+  font-size: 30px;
+  font-weight: normal;
+  padding: 0 0 10px 50px;
+}
+
+.line {
+  width: 100%;
+  height: 2px;
+  background-color: silver;
+}
+
 
 
 
