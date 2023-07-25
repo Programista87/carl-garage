@@ -16,5 +16,5 @@ export default {
 </script>
 
 <style>
-/* Dodaj style specyficzne dla App.vue, jeśli potrzebne */
+
 </style>

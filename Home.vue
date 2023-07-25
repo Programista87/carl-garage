@@ -1,7 +1,0 @@
-<template>
-  <div>This is the Home page.</div>
-</template>
-
-<script>
-export default {};
-</script>
