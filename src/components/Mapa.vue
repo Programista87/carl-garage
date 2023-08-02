@@ -17,6 +17,7 @@
 
 <script>
 export default {
+  name: 'App',
   data() {
     return {
       center: { lat: 50.08513344667171, lng: 19.199273590508625 },

@@ -27,12 +27,9 @@ const router = createRouter({
 
 const app = createApp(App);
 app.use(router);
-
-const googleMapsApiKey = 'AIzaSyAOTImhVT9V6fAAYYD8-5hi_WzEUWNYnJ0';
-
 app.use(VueGoogleMaps, {
     load: {
-        key: googleMapsApiKey,
+        key: process.env.GOOGLE_MAPS,
     },
 });
 

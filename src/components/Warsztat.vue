@@ -50,8 +50,8 @@ export default {
 <style>
 
   .home-backgroundWarsztat {
-    background-color: #000000;
     height: 80vh;
+    color: white;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

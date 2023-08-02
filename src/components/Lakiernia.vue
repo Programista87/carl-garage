@@ -35,7 +35,6 @@ export default {};
 
 <style>
 .home-backgroundLakiernia {
-  background-color: #000000;
   height: 80vh;
   background-size: cover;
   background-position: center;
