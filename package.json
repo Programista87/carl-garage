@@ -10,10 +10,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@fawmi/vue-google-maps": "^0.9.79",
+    "@fawmi/vue-google-maps": "*",
     "@vue/cli": "^5.0.8",
     "vue": "^3.2.36",
-    "vue-router": "^4.0.13"
+    "vue-image-lightbox": "^7.2.0",
+    "vue-router": "^4.0.13",
+    "vue2-google-maps": "^0.10.7"
   },
   "devDependencies": {
     "@vue/cli-service": "^5.0.8"

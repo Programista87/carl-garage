@@ -1,73 +1,109 @@
 <template>
   <div class="home-backgroundWarsztat">
-    <h1>Warsztat</h1>
-    <p class="warsztat-txt">
-      Witamy w naszym warsztacie samochodowym!
-
-      Nasz warsztat samochodowy oferuje szeroki zakres usług, aby zapewnić Państwu kompleksową opiekę nad Państwa pojazdami. Nasi wykwalifikowani mechanicy z wieloletnim doświadczeniem są gotowi do naprawy i serwisowania wszystkich marek i modeli samochodów. Bez względu na to, czy potrzebujesz rutynowej konserwacji, naprawy powypadkowej, czy diagnostyki usterki - z nami Twój samochód będzie w najlepszych rękach.
-
-      Nasze usługi obejmują między innymi:</p>
-    <ul>
-     <li>1. Naprawy mechaniczne: Nasz zespół ekspertów może skutecznie diagnozować i naprawiać wszelkiego rodzaju problemów mechanicznych w Twoim pojeździe. Od drobnych usterek po bardziej zaawansowane problemy - możesz na nas liczyć.</li>
-
-    <li>2. Naprawy blacharsko-lakiernicze: Po kolizji lub innych uszkodzeniach karoserii zapewniamy kompleksowe naprawy blacharskie i lakiernicze, aby Twój samochód wyglądał jak nowy.</li>
-
-    <li>3. Wymiana oleju i filtra: Regularna wymiana oleju jest kluczowa dla długowieczności silnika. Oferujemy profesjonalne usługi wymiany oleju i filtrów, z wykorzystaniem wysokiej jakości olejów i filtrów.</li>
-
-    <li>4. Diagnostyka komputerowa: Nasz warsztat wyposażony jest w zaawansowane urządzenia diagnostyczne, które pozwalają nam szybko i precyzyjnie zlokalizować źródło problemu w Twoim samochodzie.</li>
-
-    <li>5. Przeglądy techniczne: Oferujemy kompleksowe przeglądy techniczne, które sprawdzą kluczowe elementy Twojego pojazdu, upewniając się, że spełnia on wszelkie wymogi bezpieczeństwa.</li>
-
-    <li>6. Wymiana opon: Gwarantujemy fachową wymianę opon, w tym przechowywanie opon zimowych w sezonie letnim i letnich w sezonie zimowym.</li>
-
-    <li>7. Naprawy układu hamulcowego i zawieszenia: Bezpieczeństwo jest naszym priorytetem, dlatego oferujemy kompleksowe usługi naprawy układu hamulcowego i zawieszenia.</li>
-
-    <li>8. Klimatyzacja: Jeżeli Twój system klimatyzacji nie działa prawidłowo, zajmiemy się jego diagnozą i naprawą, aby zapewnić komfort jazdy w każdych warunkach.</li>
-
-    <li>9. Naprawy elektryczne: Nasz zespół ekspertów zna się na elektronice pojazdowej, dlatego szybko i sprawnie naprawimy wszelkie usterki elektryczne.</li></ul>
-
-     <p>Dodatkowo, oferujemy konkurencyjne ceny oraz szybki termin realizacji usług, aby minimalizować czas, w którym Twój samochód pozostaje w warsztacie.
-
-      Dbamy o pełne zadowolenie naszych klientów, dlatego gwarantujemy profesjonalizm, rzetelność i indywidualne podejście do każdego zlecenia. Nasza ekipa z pasją podchodzi do każdej naprawy, aby Twój samochód wrócił na drogę w najlepszym stanie.
-
-      Zapraszamy do naszego warsztatu samochodowego i zaufaj naszemu doświadczeniu. Jesteśmy tutaj, aby zadbać o Twój komfort jazdy i bezpieczeństwo na drodze!</p>
+    <div class="warsztat-content">
+      <h1>Witamy w Naszym Warsztacie Samochodowym</h1>
+      <p class="warsztat-txt">
+        Odkryj naszą szeroką gamę usług samochodowych, zaprojektowanych w celu zapewnienia kompleksowej opieki nad twoim pojazdem. Nasz zespół doświadczonych mechaników jest gotowy do napraw, serwisowania i diagnostyki wszystkich marek i modeli samochodów.
+      </p>
+      <div class="service-grid">
+        <div
+            v-for="(service, index) in services"
+            :key="index"
+            class="service-card"
+        >
+          <div class="service-icon">{{ index + 1 }}</div>
+          <h2>{{ service.title }}</h2>
+          <p>{{ service.description }}</p>
+        </div>
+      </div>
+      <div class="promotion-section">
+        <h2>Dlaczego Wybrać Nasz Warsztat?</h2>
+        <div class="promotion-grid">
+          <div class="promotion-card">
+            <div class="promotion-icon"></div>
+            <h3>Profesjonalna Obsługa</h3>
+            <p>Nasi wysoko wykwalifikowani mechanicy zapewniają profesjonalną obsługę na każdym etapie.</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
-
 export default {
   name: 'Warsztat',
   data() {
     return {
-      msg: 'Warsztat',
-    }
-  }
-}
-
+      services: [
+        {
+          title: 'Naprawy Mechaniczne',
+          description: 'Od drobnych problemów do bardziej zaawansowanych usterek, nasi eksperci potrafią diagnozować i naprawiać wszystkie problemy mechaniczne.',
+        },
+        {
+          title: 'Nowoczesne Wyposażenie',
+          description: 'Posiadamy nowoczesny sprzęt i narzędzia, aby skutecznie diagnozować i naprawiać problemy samochodowe.',
+        },
+        {
+          title: 'Transparentność',
+          description: 'Zawsze jasno komunikujemy się z klientami odnośnie napraw, kosztów i terminów.',
+        },
+        {
+          title: 'Szybka Naprawa',
+          description: 'Rozumiemy, jak ważny jest Twój samochód, dlatego staramy się zminimalizować czas jego naprawy.',
+        },
+      ],
+    };
+  },
+};
 </script>
 
-<style>
 
-  .home-backgroundWarsztat {
-    height: 80vh;
-    color: white;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-image: url("@/asset/img/CarlWarsztatBack.jpg");
-    position: relative;
-  }
+<style scoped>
+.home-backgroundWarsztat {
+  height: 100vh;
+  color: white;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("@/asset/img/CarlWarsztatBack.jpg");
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  .warsztat-txt {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: gold;
-    font-size: 1.5em;
-    text-align: center;
-    padding: 20px;
-  }
+.warsztat-content {
+  max-width: 800px;
+  text-align: center;
+}
 
+.warsztat-txt {
+  margin: 20px 0;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.service-card {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: left;
+}
+
+.service-icon {
+  background-color: gold;
+  color: black;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
 </style>

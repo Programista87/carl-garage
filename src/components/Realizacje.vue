@@ -5,7 +5,7 @@
     </div>
     <div v-if="showModal" class="modal" ref="modalRef" @click="closeModal">
       <span class="close-btn" @click="closeModal">&times;</span>
-      <img :src="photos[activeIndex].src" :alt="photos[activeIndex].title" class="modal-content">
+      <img :src="photos[activeIndex].src" :alt="photos[activeIndex].title" class="modal-content" @click="nextPhoto">
       <div class="caption">{{ photos[activeIndex].title }}</div>
     </div>
   </div>
@@ -87,6 +87,9 @@ export default {
         this.showModal = false;
       }
     },
+    nextPhoto() {
+      this.activeIndex = (this.activeIndex + 1) % this.photos.length;
+    },
   },
 };
 
@@ -119,8 +122,15 @@ export default {
 
 .modal-content {
   max-width: 90%;
-  max-height: 90%;
+  max-height: 80vh;
   cursor: pointer;
+  transition: transform 0.3s;
+  display: block;
+  margin: 0 auto;
+}
+
+.modal-content:hover {
+  transform: scale(1.1);
 }
 
 .close-btn {
