@@ -60,8 +60,27 @@ export default {
 
 
 <style scoped>
+/* Dodane style dla urządzeń mobilnych */
+@media (max-width: 768px) {
+  .warsztat-content {
+    padding: 20px;
+    margin-top: 20px; /* Obniżamy margines od góry */
+  }
+
+  .home-backgroundWarsztat {
+    height: auto; /* Ustawiamy auto, aby dostosować wysokość na małych ekranach */
+  }
+
+  .service-grid {
+    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+    gap: 20px;
+  }
+}
+
+
+
 .home-backgroundWarsztat {
-  height: 100vh;
+  height: calc(100vh - 70px); /* Dostosowujemy wysokość tła */
   color: white;
   background-size: cover;
   background-position: center;
@@ -76,6 +95,7 @@ export default {
 .warsztat-content {
   max-width: 800px;
   text-align: center;
+  padding: 40px;
 }
 
 .warsztat-txt {
@@ -90,13 +110,18 @@ export default {
 
 .service-card {
   background-color: rgba(0, 0, 0, 0.8);
-  padding: 20px;
   border-radius: 10px;
+  padding: 20px;
   text-align: left;
 }
 
+.service-card h2,
+.service-card p {
+  margin: 0;
+}
+
 .service-icon {
-  background-color: gold;
+  background-color: #FF0000;
   color: black;
   width: 40px;
   height: 40px;
@@ -106,4 +131,15 @@ export default {
   font-size: 1.2em;
   margin-bottom: 10px;
 }
+
+.promotion-section {
+  margin-top: 40px; /* Zwiększamy odstęp od kart */
+}
+
+.promotion-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+  gap: 20px;
+}
 </style>
+

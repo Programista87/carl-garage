@@ -35,21 +35,28 @@ export default {};
 
 ul {
   display: flex;
+  flex-wrap: wrap;
   justify-content: flex-start;
   list-style-type: none;
   padding: 10px;
-  gap: 40px;
-  overflow: hidden;
+  gap: 20px;
   background-color: #000000;
-  margin-left: 90px;
 }
 
 li {
   padding: 0;
 }
+ul li a {
+  text-decoration: none;
+  color: #C0C0C0;
+}
+
+ul li a p:hover {
+  color: #FF0000;
+}
 
 p {
-  color: silver;
+  color: #C0C0C0;
   font-family: "DialogInput",serif;
   font-size: 20px;
   margin: 0;
@@ -60,7 +67,7 @@ p {
   display: flex;
   justify-content: flex-start;
   align-items: end;
-  padding: 0 0 0 50px;
+  padding: 0 10px;
   height: 100%;
   background: #000000;
 }
