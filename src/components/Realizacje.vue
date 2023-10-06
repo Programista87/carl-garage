@@ -98,14 +98,21 @@ export default {
 <style>
 .gallery {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   gap: 20px;
+  background-size: cover
 }
 
 .thumbnail {
   width: 100%;
   height: auto;
   cursor: pointer;
+  object-fit: cover; /* Utrzymuje proporcje obrazu i wypełnia element */
+  transition: transform 0.3s;
+}
+
+.thumbnail:hover {
+  transform: scale(1.05);
 }
 
 .modal {

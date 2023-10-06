@@ -3,7 +3,6 @@
     <div class="lakiernia-content">
       <h1 class="lakiernia-heading">Lakiernia</h1>
       <p class="warsztat-txt">
-        Witamy na podstronie naszej lakierni samochodowej!
         Nasza profesjonalna lakiernia to miejsce, gdzie dbamy o estetykę i perfekcyjne wykończenie Twojego pojazdu. Dzięki zaawansowanym technologiom i doświadczeniu naszych lakierników, przywracamy blask i świeżość Twojej karoserii po każdym uszkodzeniu czy przemalowaniu.
       </p>
       <p class="warsztat-txt">
@@ -69,10 +68,52 @@ export default {
 };
 </script>
 
+<style scoped>
+/* Styl dla komponentu Lakiernia */
 
-<style>
+.lakiernia-content {
+  max-width: 800px;
+  text-align: center;
+  padding: 40px;
+  margin: 0 auto; /* Wyśrodkuj zawartość */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.service-card {
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+  padding: 20px;
+  text-align: left;
+  margin-bottom: 20px; /* Dodaj margines między kartami */
+}
+
+.service-card h2,
+.service-card p {
+  margin: 0;
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: #ff9900;
+}
+
+.service-icon {
+  background-color: #FF0000;
+  color: black;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
 .home-backgroundLakiernia {
-  height: 80vh;
+  height: auto;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -80,19 +121,20 @@ export default {
   position: relative;
 }
 
-.lakiernia-content {
-  padding: 2rem;
-  color: white;
-}
-
 .lakiernia-heading {
   font-size: 2.5rem;
-  color: #ff9900; /* przykładowy kolor nagłówka */
+  color: #ff9900;
+  display: block;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  font-weight: bold;
 }
 
 .warsztat-txt {
-  max-width: 700px; /* Ogranicz szerokość tekstu */
-  margin: 0 auto; /* Wyśrodkuj tekst */
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 10px;
 }
-
 </style>

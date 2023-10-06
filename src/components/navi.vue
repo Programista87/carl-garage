@@ -66,7 +66,7 @@ p {
 .top-bar {
   display: flex;
   justify-content: flex-start;
-  align-items: end;
+  align-items: flex-end;
   padding: 0 10px;
   height: 100%;
   background: #000000;

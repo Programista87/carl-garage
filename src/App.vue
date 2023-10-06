@@ -19,6 +19,7 @@ export default {
 
 .c-g {
   height: 100%;
+  width: 100%;
   background: #000000;
 }
 

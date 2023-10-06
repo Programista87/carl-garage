@@ -4,7 +4,9 @@
       <div class="home-title">
         <h1>Witaj w <span class="logo-text">CarL Garage</span></h1>
         <h6><span class="motto">Twój samochód w najlepszych rekach</span></h6>
-        <button class="info">Dowiedz się więcej</button>
+        <router-link to="/warsztat">
+          <button class="info">Dowiedz się więcej</button>
+        </router-link>
       </div>
     </div>
   </div>
@@ -41,6 +43,9 @@ export default {
     background-repeat: no-repeat;
     background-image: url("@/asset/img/CarlHomeBackground.jpg");
     position: relative;
+  }
+  .info {
+    margin-bottom: 20px;
   }
 }
 
@@ -88,6 +93,7 @@ export default {
   border: 2px solid #000000;
   border-radius: 5px;
   padding: 5px;
+  margin-bottom: 20px;
 }
 
 h1 {
@@ -99,4 +105,5 @@ h1 {
   margin-bottom: 0;
   padding-bottom: 0;
 }
+
 </style>

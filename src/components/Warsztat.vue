@@ -60,15 +60,15 @@ export default {
 
 
 <style scoped>
-/* Dodane style dla urządzeń mobilnych */
+
 @media (max-width: 768px) {
   .warsztat-content {
     padding: 20px;
-    margin-top: 20px; /* Obniżamy margines od góry */
+    margin-top: 20px;
   }
 
   .home-backgroundWarsztat {
-    height: auto; /* Ustawiamy auto, aby dostosować wysokość na małych ekranach */
+    height: auto;
   }
 
   .service-grid {
@@ -77,10 +77,8 @@ export default {
   }
 }
 
-
-
 .home-backgroundWarsztat {
-  height: calc(100vh - 70px); /* Dostosowujemy wysokość tła */
+  height: auto;
   color: white;
   background-size: cover;
   background-position: center;
@@ -100,6 +98,14 @@ export default {
 
 .warsztat-txt {
   margin: 20px 0;
+}
+
+p.warsztat-txt, p {
+  font-size: 1.2em;
+  font-weight: 300;
+  line-height: 1.5;
+  letter-spacing: 0.05em;
+  color: white;
 }
 
 .service-grid {

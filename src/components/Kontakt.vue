@@ -6,25 +6,9 @@
     <div class="contact-details">
       <div class="contact-info">
         <h2>Dane Kontaktowe</h2>
-        <p><strong>Adres:</strong> ul. Warsztatowa 123, 00-000 Miastowo</p>
-        <p><strong>Telefon:</strong> +48 123 456 789</p>
-        <p><strong>Email:</strong> kontakt@warsztat-samochodowy.pl</p>
-      </div>
-
-      <div class="contact-form">
-        <h2>Formularz Kontaktowy</h2>
-        <form>
-          <label for="name">Imię i Nazwisko</label>
-          <input type="text" id="name" name="name" required>
-
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" required>
-
-          <label for="message">Wiadomość</label>
-          <textarea id="message" name="message" rows="4" required></textarea>
-
-          <button type="submit">Wyślij</button>
-        </form>
+        <p><strong>Adres:</strong> ul. Chełmska 195, 41-403 Kopciowice</p>
+        <p><strong>Telefon:</strong> <span class="contact-icon phone"></span>+48 600 195 390</p>
+        <p><strong>Email:</strong> <span class="contact-icon"></span>kontakt@warsztat-samochodowy.pl</p>
       </div>
     </div>
   </div>
@@ -36,45 +20,72 @@ export default {};
 
 <style>
 .contact-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
   padding: 2rem;
+  min-height: 100vh;
+  background-size: cover;
+}
+
+.contact-page h1 {
+  font-family: 'Arial', sans-serif;
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.contact-page p {
+  font-family: 'Arial', sans-serif;
+  font-size: 18px;
+  margin-bottom: 20px;
 }
 
 .contact-details {
   display: flex;
-  justify-content: space-between;
-  margin-top: 2rem;
-}
-
-.contact-info,
-.contact-form {
-  flex: 1;
-  margin: 0 1rem;
-}
-
-.contact-form form {
-  display: flex;
   flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 400px;
+
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  padding: 20px;
 }
 
-.contact-form label {
-  margin-top: 1rem;
+.contact-info h2 {
+  font-family: 'Arial', sans-serif;
+  font-size: 24px;
+  margin-bottom: 10px;
 }
 
-.contact-form input,
-.contact-form textarea {
-  padding: 0.5rem;
-  margin-top: 0.2rem;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+.contact-info p {
+  font-family: 'Arial', sans-serif;
+  font-size: 18px;
+  margin: 10px 0;
+  color: black;
 }
 
-.contact-form button {
-  margin-top: 1rem;
-  padding: 0.5rem 1rem;
-  background-color: #ff9900;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
+.contact-info strong {
+  font-weight: bold;
+}
+
+.contact-info .contact-icon {
+  margin-right: 10px;
+  font-size: 24px;
+}
+
+.contact-info .contact-icon:before {
+  content: '\1F4DE';
+}
+
+.contact-info .contact-icon.phone:before {
+  content: '\260E';
+}
+
+@media (max-width: 600px) {
+  .contact-details {
+    max-width: 90%;
+  }
 }
 </style>
