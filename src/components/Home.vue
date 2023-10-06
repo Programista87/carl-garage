@@ -54,7 +54,8 @@ export default {
 }
 
 .home-background {
-  height: 80vh;
+  height: 100%;
+  width:100%;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
