@@ -35,6 +35,7 @@ export default {
     width: 80%;
     padding-top: 100px;
     font-size: 20px;
+    margin-top: 10%;
   }
   .home-background {
     height: auto;
@@ -43,6 +44,9 @@ export default {
     background-repeat: no-repeat;
     background-image: url("@/asset/img/CarlHomeBackground.jpg");
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .info {
     margin-bottom: 20px;
@@ -54,8 +58,8 @@ export default {
 }
 
 .home-background {
-  height: 100%;
-  width:100%;
+  height: 100vh; /* Set to 100% of viewport height */
+  width: 100%;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

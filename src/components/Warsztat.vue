@@ -139,7 +139,7 @@ p.warsztat-txt, p {
 }
 
 .promotion-section {
-  margin-top: 40px; /* Zwiększamy odstęp od kart */
+  margin-top: 40px;
 }
 
 .promotion-grid {

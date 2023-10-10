@@ -100,7 +100,7 @@ export default {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   gap: 20px;
-  background-size: cover
+  background-size: cover;
 }
 
 .thumbnail {
