@@ -27,9 +27,10 @@ const router = createRouter({
 
 const app = createApp(App);
 app.use(router);
+
 app.use(VueGoogleMaps, {
     load: {
-        key: process.env.GOOGLE_MAPS,
+        key: process.env.VUE_APP_GOOGLE_MAPS_API_KEY,
     },
 });
 

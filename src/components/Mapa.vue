@@ -1,11 +1,12 @@
 <template>
   <div class="map">
     <GMapMap
+        v-if="mapIsReady"
         :center="center"
-        :zoom="9"
-        :api-key="process.env.VUE_APP_GOOGLE_MAPS_API_KEY"
+        :zoom="zoom"
+        :api-key="googleMapsApiKey"
         map-type-id="terrain"
-        style="width: 800px; height: 600px"
+        style="width: 50%; height: 500px"
     >
       <GMapCluster>
         <GMapMarker
@@ -24,6 +25,9 @@
 <script>
 export default {
   name: 'Mapa',
+  props: {
+    googleMapsApiKey: String,
+  },
   data() {
     return {
       center: { lat: 50.08513344667171, lng: 19.199273590508625 },
@@ -35,7 +39,12 @@ export default {
           },
         },
       ],
+      mapIsReady: false,
+      zoom: 9,
     };
+  },
+  created() {
+    console.log('Komponent Mapa.vue został utworzony');
   },
 };
 </script>
