@@ -7,12 +7,15 @@
       <div class="contact-info">
         <h2>Dane Kontaktowe</h2>
         <p><strong>Adres:</strong> ul. Chełmska 195, 41-403 Kopciowice</p>
-        <p><strong>Telefon:</strong> <span class="contact-icon phone"></span>+48 600 195 390</p>
-        <p><strong>Email:</strong> <span class="contact-icon"></span>kontakt@warsztat-samochodowy.pl</p>
+        <p><strong>Telefon:</strong><span class="contact-icon phone"></span><a href="tel:+48600195390">+48 600 195 390</a></p>
+<!--        <p><strong>Email:</strong> <a href="mailto:kontakt@warsztat-samochodowy.pl"><span class="contact-icon"></span>kontakt@warsztat-samochodowy.pl</a></p>-->
+        <p><strong>Godziny Pracy:</strong> Poniedziałek - Piątek: 8:00 - 17:00, Sobota: 9:00 - 13:00</p>
+        <p><strong>Opinie na Google:</strong> <a href="https://www.google.com/search?q=Twoja+Firma+Opinie" target="_blank">Sprawdź nasze opinie</a></p>
       </div>
     </div>
   </div>
 </template>
+
 
 <script>
 export default {};
@@ -46,7 +49,7 @@ export default {};
   flex-direction: column;
   align-items: center;
   width: 100%;
-  max-width: 400px;
+  max-width: 600px;
 
   background-color: rgba(255, 255, 255, 0.8);
   border-radius: 10px;

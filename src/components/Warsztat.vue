@@ -69,6 +69,7 @@ export default {
 
   .home-backgroundWarsztat {
     height: auto;
+    width: auto;
   }
 
   .service-grid {
@@ -80,7 +81,7 @@ export default {
 .home-backgroundWarsztat {
   height: auto;
   color: white;
-  background-size: cover;
+  background-size: 100% 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-image: url("@/asset/img/CarlWarsztatBack.jpg");

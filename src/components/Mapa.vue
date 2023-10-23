@@ -39,7 +39,7 @@ export default {
           },
         },
       ],
-      mapIsReady: false,
+      mapIsReady: true,
       zoom: 9,
     };
   },
