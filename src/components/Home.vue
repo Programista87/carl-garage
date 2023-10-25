@@ -1,6 +1,6 @@
 <template>
   <div class="arena">
-    <div class="home-background">
+    <div class="background">
       <div class="home-title">
         <h1>Witaj w <span class="logo-text">CarL Garage</span></h1>
         <h6><span class="motto">Twój samochód w najlepszych rekach</span></h6>
@@ -37,7 +37,7 @@ export default {
     font-size: 20px;
     margin-top: 10%;
   }
-  .home-background {
+  .background {
     height: auto;
     background-size: cover;
     background-position: center;
@@ -57,7 +57,7 @@ export default {
   background: #000000;
 }
 
-.home-background {
+.background {
   height: 100vh; /* Set to 100% of viewport height */
   width: 100%;
   background-size: cover;

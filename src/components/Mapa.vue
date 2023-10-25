@@ -51,7 +51,7 @@
 
 
 <template>
-  <div style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+  <div style="display: flex; justify-content: center; align-items: center; height: 80vh;">
     <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1380.0354387616098!2d19.199287000000005!3d50.085056!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4716c18d6c87a50f%3A0x8fbf5f9b48baacdb!2sCarl-Garage!5e1!3m2!1spl!2spl!4v1698144861398!5m2!1spl!2spl&zoom=5" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   </div>
 </template>

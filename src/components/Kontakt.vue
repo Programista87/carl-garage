@@ -10,7 +10,7 @@
         <p><strong>Telefon:</strong><span class="contact-icon phone"></span><a href="tel:+48600195390">+48 600 195 390</a></p>
 <!--        <p><strong>Email:</strong> <a href="mailto:kontakt@warsztat-samochodowy.pl"><span class="contact-icon"></span>kontakt@warsztat-samochodowy.pl</a></p>-->
         <p><strong>Godziny Pracy:</strong> Poniedziałek - Piątek: 8:00 - 17:00, Sobota: 9:00 - 13:00</p>
-        <p><strong>Opinie na Google:</strong> <a href="https://www.google.com/search?q=Twoja+Firma+Opinie" target="_blank">Sprawdź nasze opinie</a></p>
+        <p><strong>Opinie na Google:</strong> <a href="https://g.page/r/CdusukibX7-PEBM/review" target="_blank">Dodaj proszę opinie</a></p>
       </div>
     </div>
   </div>

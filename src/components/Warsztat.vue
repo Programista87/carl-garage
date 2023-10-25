@@ -1,8 +1,8 @@
 <template>
-  <div class="home-backgroundWarsztat">
-    <div class="warsztat-content">
-      <h1>Witamy w Naszym Warsztacie Samochodowym</h1>
-      <p class="warsztat-txt">
+  <div class="background">
+    <div class="content">
+      <h1 class="heading">Witamy w Naszym Warsztacie Samochodowym</h1>
+      <p class="service-txt">
         Odkryj naszą szeroką gamę usług samochodowych, zaprojektowanych w celu zapewnienia kompleksowej opieki nad twoim pojazdem. Nasz zespół doświadczonych mechaników jest gotowy do napraw, serwisowania i diagnostyki wszystkich marek i modeli samochodów.
       </p>
       <div class="service-grid">
@@ -61,24 +61,25 @@ export default {
 
 <style scoped>
 
-@media (max-width: 768px) {
-  .warsztat-content {
-    padding: 20px;
-    margin-top: 20px;
-  }
+/*@media (max-width: 768px) {*/
+/*  .warsztat-content {*/
+/*    padding: 20px;*/
+/*    margin-top: 20px;*/
+/*  }*/
 
-  .home-backgroundWarsztat {
-    height: auto;
-    width: auto;
-  }
+/*  .home-backgroundWarsztat {*/
+/*    height: auto;*/
+/*    width: auto;*/
+/*  }*/
 
-  .service-grid {
-    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
-    gap: 20px;
-  }
-}
+/*  .service-grid {*/
+/*    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));*/
+/*    gap: 20px;*/
+/*  }*/
+/*}*/
+@import "@/style/carl.css";
 
-.home-backgroundWarsztat {
+.background {
   height: auto;
   color: white;
   background-size: 100% 100%;
@@ -91,62 +92,62 @@ export default {
   align-items: center;
 }
 
-.warsztat-content {
-  max-width: 800px;
-  text-align: center;
-  padding: 40px;
-}
+/*.warsztat-content {*/
+/*  max-width: 800px;*/
+/*  text-align: center;*/
+/*  padding: 40px;*/
+/*}*/
 
-.warsztat-txt {
-  margin: 20px 0;
-}
+/*.service-txt {*/
+/*  margin: 20px 0;*/
+/*}*/
 
-p.warsztat-txt, p {
-  font-size: 1.2em;
-  font-weight: 300;
-  line-height: 1.5;
-  letter-spacing: 0.05em;
-  color: white;
-}
+/*p.service-txt, p {*/
+/*  font-size: 1.2em;*/
+/*  font-weight: 300;*/
+/*  line-height: 1.5;*/
+/*  letter-spacing: 0.05em;*/
+/*  color: white;*/
+/*}*/
 
-.service-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
-}
+/*.service-grid {*/
+/*  display: grid;*/
+/*  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));*/
+/*  gap: 20px;*/
+/*}*/
 
-.service-card {
-  background-color: rgba(0, 0, 0, 0.8);
-  border-radius: 10px;
-  padding: 20px;
-  text-align: left;
-}
+/*.service-card {*/
+/*  background-color: rgba(0, 0, 0, 0.8);*/
+/*  border-radius: 10px;*/
+/*  padding: 20px;*/
+/*  text-align: left;*/
+/*}*/
 
-.service-card h2,
-.service-card p {
-  margin: 0;
-}
+/*.service-card h2,*/
+/*.service-card p {*/
+/*  margin: 0;*/
+/*}*/
 
-.service-icon {
-  background-color: #FF0000;
-  color: black;
-  width: 40px;
-  height: 40px;
-  text-align: center;
-  line-height: 40px;
-  border-radius: 50%;
-  font-size: 1.2em;
-  margin-bottom: 10px;
-}
+/*.service-icon {*/
+/*  background-color: #FF0000;*/
+/*  color: black;*/
+/*  width: 40px;*/
+/*  height: 40px;*/
+/*  text-align: center;*/
+/*  line-height: 40px;*/
+/*  border-radius: 50%;*/
+/*  font-size: 1.2em;*/
+/*  margin-bottom: 10px;*/
+/*}*/
 
-.promotion-section {
-  margin-top: 40px;
-}
+/*.promotion-section {*/
+/*  margin-top: 40px;*/
+/*}*/
 
-.promotion-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
-  gap: 20px;
-}
+/*.promotion-grid {*/
+/*  display: grid;*/
+/*  grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));*/
+/*  gap: 20px;*/
+/*}*/
 </style>
 

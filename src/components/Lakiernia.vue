@@ -1,11 +1,11 @@
 <template>
-  <div class="home-backgroundLakiernia">
-    <div class="lakiernia-content">
-      <h1 class="lakiernia-heading">Lakiernia</h1>
-      <p class="warsztat-txt">
+  <div class="background">
+    <div class="content">
+      <h1 class="heading">Lakiernia</h1>
+      <p class="service-txt">
         Nasza profesjonalna lakiernia to miejsce, gdzie dbamy o estetykę i perfekcyjne wykończenie Twojego pojazdu. Dzięki zaawansowanym technologiom i doświadczeniu naszych lakierników, przywracamy blask i świeżość Twojej karoserii po każdym uszkodzeniu czy przemalowaniu.
       </p>
-      <p class="warsztat-txt">
+      <p class="service-txt">
         Nasze usługi lakiernicze obejmują:
       </p>
       <div class="service-grid">
@@ -19,13 +19,13 @@
           <p>{{ service.description }}</p>
         </div>
       </div>
-      <p class="warsztat-txt">
+      <p class="service-txt">
         Nasz zespół lakierników to pasjonaci, dla których jakość i precyzja są priorytetem. Wykorzystujemy nowoczesne technologie lakiernicze, a nasze podejście do pracy jest indywidualne dla każdego klienta. Zależy nam na pełnej satysfakcji naszych klientów, dlatego do każdego zlecenia podchodzimy z zaangażowaniem i starannością.
       </p>
-      <p class="warsztat-txt">
+      <p class="service-txt">
         W naszej lakierni samochodowej stawiamy na doskonałą współpracę z klientem, doradzamy i służymy fachowym wsparciem na każdym etapie. Niezależnie od tego, czy potrzebujesz drobnych napraw czy kompleksowego malowania, u nas Twój samochód zostanie traktowany z najwyższą starannością.
       </p>
-      <p class="warsztat-txt">
+      <p class="service-txt">
         Zapraszamy do naszej lakierni, gdzie artystyczna precyzja łączy się z techniczną doskonałością, tworząc efekty, które zachwycą Cię i wszystkich na drodze. Oddaj swój samochód w nasze ręce, a my sprawimy, że zyska on nowe życie i zachwyci swoim wyglądem!
       </p>
     </div>
@@ -70,49 +70,9 @@ export default {
 
 <style scoped>
 /* Styl dla komponentu Lakiernia */
+@import "@/style/carl.css";
 
-.lakiernia-content {
-  max-width: 800px;
-  text-align: center;
-  padding: 40px;
-  margin: 0 auto; /* Wyśrodkuj zawartość */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.service-card {
-  background-color: rgba(0, 0, 0, 0.8);
-  border-radius: 10px;
-  padding: 20px;
-  text-align: left;
-  margin-bottom: 20px; /* Dodaj margines między kartami */
-}
-
-.service-card h2,
-.service-card p {
-  margin: 0;
-}
-
-h2 {
-  font-size: 1.5rem;
-  color: #ff9900;
-}
-
-.service-icon {
-  background-color: #FF0000;
-  color: black;
-  width: 40px;
-  height: 40px;
-  text-align: center;
-  line-height: 40px;
-  border-radius: 50%;
-  font-size: 1.2em;
-  margin-bottom: 10px;
-}
-
-.home-backgroundLakiernia {
+.background {
   height: auto;
   background-size: cover;
   background-position: center;
@@ -121,20 +81,5 @@ h2 {
   position: relative;
 }
 
-.lakiernia-heading {
-  font-size: 2.5rem;
-  color: #ff9900;
-  display: block;
-  margin-block-start: 0.67em;
-  margin-block-end: 0.67em;
-  margin-inline-start: 0;
-  margin-inline-end: 0;
-  font-weight: bold;
-}
 
-.warsztat-txt {
-  max-width: 700px;
-  margin: 0 auto;
-  padding: 10px;
-}
 </style>
